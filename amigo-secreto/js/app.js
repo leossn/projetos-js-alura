@@ -4,10 +4,9 @@ function adicionar() {
     let amigoAdd = document.getElementById('nome-amigo').value;
     if (amigoAdd != '' || amigos.includes(amigoAdd)) {
         amigos.push(amigoAdd);
-        return;
+
     } else {
         alert("Amigo inválido, não deve ser vazio ou repetir amigo");
-        return;
     }
     let listaAmigos = document.getElementById('lista-amigos');
     if (listaAmigos.textContent == '') {
@@ -31,7 +30,6 @@ function sortear() {
     }
     } else {
         alert("É necessário no mínimo 4 participantes para realizar o sorteio")
-        return;
     }
 }
 
